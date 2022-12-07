@@ -16,8 +16,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" style="wheels" translatesAutoresizingMaskIntoConstraints="NO" id="cRX-Pk-Ead">
+                                <rect key="frame" x="20" y="169" width="353" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="Uea-wy-MNp"/>
+                                </constraints>
+                            </datePicker>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Flz-du-lqG">
-                                <rect key="frame" x="20" y="319" width="353" height="50"/>
+                                <rect key="frame" x="20" y="397" width="353" height="50"/>
                                 <color key="backgroundColor" systemColor="systemOrangeColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="1QZ-Ux-scD"/>
@@ -30,7 +36,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your age will be shown here." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H4T-Oi-k2n">
-                                <rect key="frame" x="20" y="249" width="353" height="50"/>
+                                <rect key="frame" x="20" y="327" width="353" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="ekg-F4-JGH"/>
                                 </constraints>
@@ -38,25 +44,38 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" style="wheels" translatesAutoresizingMaskIntoConstraints="NO" id="cRX-Pk-Ead">
-                                <rect key="frame" x="20" y="79" width="353" height="150"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Find My Age" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="efI-fy-MMf">
+                                <rect key="frame" x="20" y="79" width="353" height="50"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="150" id="Uea-wy-MNp"/>
+                                    <constraint firstAttribute="height" constant="50" id="KVa-lO-64a"/>
                                 </constraints>
-                            </datePicker>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Insert your birth date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xUu-P5-R8G">
+                                <rect key="frame" x="116" y="140" width="160" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="H4T-Oi-k2n" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="0Ix-Qg-vcT"/>
+                            <constraint firstItem="cRX-Pk-Ead" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="1gN-Kv-I5r"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Flz-du-lqG" secondAttribute="trailing" constant="20" id="1ih-jM-Ptg"/>
-                            <constraint firstItem="cRX-Pk-Ead" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="349-vg-uWP"/>
                             <constraint firstItem="Flz-du-lqG" firstAttribute="top" secondItem="H4T-Oi-k2n" secondAttribute="bottom" constant="20" id="GPR-EF-cN2"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="cRX-Pk-Ead" secondAttribute="trailing" constant="20" id="SHn-B2-Euc"/>
-                            <constraint firstItem="cRX-Pk-Ead" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="a9L-fY-gnO"/>
+                            <constraint firstItem="efI-fy-MMf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Ghb-WR-Xcl"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="cRX-Pk-Ead" secondAttribute="trailing" constant="20" id="IBA-M8-clb"/>
+                            <constraint firstItem="efI-fy-MMf" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="KPr-c1-D86"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="H4T-Oi-k2n" secondAttribute="trailing" constant="20" id="dpg-Xg-PkW"/>
+                            <constraint firstItem="cRX-Pk-Ead" firstAttribute="top" secondItem="efI-fy-MMf" secondAttribute="bottom" constant="40" id="gei-2Y-RZB"/>
                             <constraint firstItem="Flz-du-lqG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="kLs-oq-6RE"/>
-                            <constraint firstItem="H4T-Oi-k2n" firstAttribute="top" secondItem="cRX-Pk-Ead" secondAttribute="bottom" constant="20" id="ps4-OZ-M9r"/>
+                            <constraint firstItem="H4T-Oi-k2n" firstAttribute="top" secondItem="cRX-Pk-Ead" secondAttribute="bottom" constant="8" symbolic="YES" id="kcf-V5-x0E"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="efI-fy-MMf" secondAttribute="trailing" constant="20" id="uQr-Cb-LV6"/>
                         </constraints>
                     </view>
                     <connections>
